@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plastation -Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/logos/logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2fe7e53e3c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<audio>
+
+    <source src="./audio/hover.mp3">
+</audio>    
+
+
+<div class="ps5">
+
+    
+    <header>
+        <div class="nav-top">
+            <div class="profile"><img src="./images/media/profile.jpg" alt="profile">&nbsp&nbsp<p>Name <br> <span style="font-size: 12px;"><a href="#">Profile</a></span></p></div>
+            <div class="icons">
+                <img title="Notifications" src="./images/icons/notify.png" alt="" class="notify">
+                <img title="Friends" src="./images/icons/friends.png" alt="" class="friends">
+                <img title="Achievements" src="./images/icons/achieve.png" alt="" class="achieve">
+            </div>
+            <div id = "clock" onload="currentTime()"></div>
+            
+        </div>
+        
+    </header>
+    <main>
+        <div class="nav-main">
+            <ul>
+            <li class="tablinks store-tab" onclick="openCity(event, 'store')">Store</li>
+            <li class=" tablinks games-tab" onclick="openCity(event, 'games')">My games</li>
+            <li class="tablinks media-tab" onclick="openCity(event, 'media')">Media</li>
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="all-games tabcontent" id="games">
+            <section>
+                <div class="games">
+                    <img src="./images/games/cyberpunk2077.jfif" class="cyber game" alt="">
+                    <img src="./images/games/assassinscreedvalhalla.jpg" class="assc game" alt="">
+                    <img src="./images/games/halo.jfif" class="halo game" alt="">
+                    <img src="./images/games/rdr.jpg" class="rdr game" alt="">
+                    <img src="./images/games/witcher.jfif" class="witcher game" alt="">
+                    <img src="./images/games/Hitman.jpg" class="hit game" alt="">
+                </div>
+            </section>
+            <section>
+                <div class="play">
+                    <h1 class="game-name">Cyberpunk</h1>
+                    <p class="game-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Neque sit in doloribus maxime tempora <br> repellendus nulla error voluptatum, eum iure.</p>
+                    <a href="#"><button class="play-btn">Play</button></a>
+                    <!-- <a href="#"><button class="opt-btn">···</button></a> -->
+                </div>
+            </section>
+        </div>
+
+
+
+
+
+
+        
+        <div class="store tabcontent" id="store" >
+            <div class="s-content">
+                <img src="./images/games store/gta5.jpg" alt="">
+                <div class="get-content">
+                    <h1>Grand theft Auto 5</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iure quos, consectetur totam illo ipsum.</p>
+                    <h2>$15.00</h2>
+                </div>
+                <div class="get"><button class="cart">Add to Cart</button><button class="buy">Buy Now</button></div>
+            </div>
+            <div class="s-content">
+                <img src="./images/games store/gow.jpg" alt="">
+                <div class="get-content">
+                    <h1>God of War</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iure quos, consectetur totam illo ipsum.</p>
+                    <h2>$15.00</h2>
+                </div>
+                <div class="get"><button class="cart">Add to Cart</button><button class="buy">Buy Now</button></div>
+            </div>
+            <div class="s-content">
+                <img src="./images/games store/lou.jpg" alt="">
+                <div class="get-content">
+                    <h1>The Last of Us</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iure quos, consectetur totam illo ipsum.</p>
+                    <h2>$15.00</h2>
+                </div>
+                <div class="get"><button class="cart">Add to Cart</button><button class="buy">Buy Now</button></div>
+            </div>
+            <div class="s-content">
+                <img src="./images/games store/spiderman.jpg" alt="">
+                <div class="get-content">
+                    <h1>Spider Man</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iure quos, consectetur totam illo ipsum.</p>
+                    <h2>$15.00</h2>
+                </div>
+                <div class="get"><button class="cart">Add to Cart</button><button class="buy">Buy Now</button></div>
+            </div>
+            <div class="s-content">
+                <img src="./images/games store/fc6.jpg" alt="">
+                <div class="get-content">
+                    <h1>Far Cry 6</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iure quos, consectetur totam illo ipsum.</p>
+                    <h2>$15.00</h2>
+                </div>
+                <div class="get"><button class="cart">Add to Cart</button><button class="buy">Buy Now</button></div>
+            </div>
+            <div class="s-content">
+                <img src="./images/games store/forza.jpg" alt="">
+                <div class="get-content">
+                    <h1>Forza Horizon 5</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iure quos, consectetur totam illo ipsum.</p>
+                    <h2>$15.00</h2>
+                </div>
+                <div class="get"><button class="cart">Add to Cart</button><button class="buy">Buy Now</button></div>
+            </div>
+            <div class="s-content">
+                <img src="./images/games store/fifa23.jpg" alt="">
+                <div class="get-content">
+                    <h1>Fifa 23</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iure quos, consectetur totam illo ipsum.</p>
+                    <h2>$15.00</h2>
+                </div>
+                <div class="get"><button class="cart">Add to Cart</button><button class="buy">Buy Now</button></div>
+            </div>
+            <div class="s-content">
+                <img src="./images/games store/miles.jpg" alt="">
+                <div class="get-content">
+                    <h1>Miles Morales</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iure quos, consectetur totam illo ipsum.</p>
+                    <h2>$15.00</h2>
+                </div>
+                <div class="get"><button class="cart">Add to Cart</button><button class="buy">Buy Now</button></div>
+            </div>
+            <div class="s-content">
+                <img src="./images/games store/tekken.jpg" alt="">
+                <div class="get-content">
+                    <h1>Tekken 8</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iure quos, consectetur totam illo ipsum.</p>
+                    <h2>$15.00</h2>
+                </div>
+                <div class="get"><button class="cart">Add to Cart</button><button class="buy">Buy Now</button></div>
+            </div>
+            <div class="s-content">
+                <img src="./images/games store/Control.jpg" alt="">
+                <div class="get-content">
+                    <h1>Control</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iure quos, consectetur totam illo ipsum.</p>
+                    <h2>$15.00</h2>
+                </div>
+                <div class="get"><button class="cart">Add to Cart</button><button class="buy">Buy Now</button></div>
+            </div>
+            <div class="s-content">
+                <img src="./images/games store/stray.jpg" alt="">
+                <div class="get-content">
+                    <h1>Stray</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iure quos, consectetur totam illo ipsum.</p>
+                    <h2>$15.00</h2>
+                </div>
+                <div class="get"><button class="cart">Add to Cart</button><button class="buy">Buy Now</button></div>
+            </div>
+            <div class="s-content">
+                <img src="./images/games store/sotr.jpg" alt="">
+                <div class="get-content">
+                    <h1>Tomb Raider</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iure quos, consectetur totam illo ipsum.</p>
+                    <h2>$15.00</h2>
+                </div>
+                <div class="get"><button class="cart">Add to Cart</button><button class="buy">Buy Now</button></div>
+            </div>
+        </div>
+       
+          
+
+
+
+
+
+
+<div class="media tabcontent" id="media">
+    <div class="media-item">
+        <a href="#"><img src="./images/media/ps.jpg" alt=""></a>
+    </div>
+    <div class="media-item">
+        <a href="#"><img src="./images/media/hbo.jpg" alt=""></a>
+    </div>
+    <div class="media-item">
+        <a href="#"><img src="./images/media/apv.jpg" alt=""></a>
+    </div>
+    <div class="media-item">
+        <a href="#"><img src="./images/media/dh.jpg" alt=""></a>
+    </div>
+    <div class="media-item">
+        <a href="#"><img src="./images/media/yt.jpg" alt=""></a>
+    </div>
+    <div class="media-item">
+        <a href="#"><img src="./images/media/atv.jpg" alt=""></a>
+    </div>
+    <div class="media-item">
+        <a href="#"><img src="./images/media/nt.jpg" alt=""></a>
+    </div>
+    <div class="media-item">
+        <a href="#"><img src="./images/media/hl.jpg" alt=""></a>
+    </div>
+</div>
+
+
+
+
+    </main>
+
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

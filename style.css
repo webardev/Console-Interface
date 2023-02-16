@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('./images/games/bg.jfif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+    transform-origin: left;
+    color: white;
+    animation: fade 1s;
+    background-attachment: fixed;
+    
+}
+
+
+
+
+
+.ps5 {
+    padding: 0 3rem;
+    z-index: -100;
+}
+
+
+
+
+.nav-top {
+    margin-top: 10px;
+    /* background-color: rgb(94, 94, 94); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+
+
+.profile img {
+    width: 2.5rem;
+    border-radius: 100%;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.icons img {
+    width: 1.3rem;
+    margin: 0px 10px;
+    background-color: rgba(180, 180, 180, 0.384);
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    padding: 6px;
+    border-radius: 100px;
+    position: relative;
+    display: inline-block;
+}
+
+.drop {
+    position: absolute;
+    background-color: #00414e;
+    z-index: 100;
+    /* display: none; */
+}
+
+.icons img:hover .drop {
+    display: block;
+}
+
+.clock {
+    color: white;
+}
+
+.nav-main {
+    margin-top: 10px;
+}
+
+.nav-main ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-main a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-main li {
+    padding: 12px 27px;
+    margin: 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.nav-main li:hover {
+    background-color: rgba(180, 180, 180, 0.384);
+    backdrop-filter: blur(5px);
+    color: white;
+    /* transform: scale(1.1); */
+}
+
+.active {
+    background-color: rgba(180, 180, 180, 0.384);
+    backdrop-filter: blur(5px);
+}
+
+
+.games {
+    margin-top: 20px;
+}
+
+.games img {
+    width: 10rem;
+    border-radius: 10px;
+    margin: 0px 10px;
+    transition: 0.3s cubic-bezier(0, 0, 1, 1.38);
+    cursor: pointer;
+    transform-origin: top;
+    box-shadow: 4px 4px 5px #0000005c;
+
+}
+
+
+
+
+.games img:hover {
+    transform: scale(1.2);
+    border-radius: 5px;
+
+}
+
+
+
+a {
+    color: white;
+}
+
+.play {
+    background-color: rgb(235, 231, 3);
+    /* display: inline-block; */
+    display: none;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 60px;
+    color: black;
+    box-shadow: 9px 15px 20px #00000091;
+    transition: 0.5s;
+
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+
+
+h1 {
+    margin: 10px 0px 0px 0px;
+}
+
+.play-btn {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    width: 9rem;
+    height: 3.4rem;
+    font-size: 1.4rem;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.116);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+
+.play-btn:hover {
+    transform: scale(0.9);
+}
+
+.play-btn:active {
+    transform: none;
+}
+
+/* .opt-btn {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    width: 3.4rem;
+    height: 3.4rem;
+    font-size: 1.4rem;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.116);
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+
+
+
+.opt-btn:hover {
+    transform: scale(0.9);
+}
+
+.opt-btn:active {
+    transform: none;
+} */
+
+
+
+
+
+
+
+.store {
+    margin-bottom: 20px;
+    /* display: grid; */
+    display: none;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.s-content {
+    /* background-color: rgba(255, 255, 255, 0.336); */
+    background-image: linear-gradient(
+            78deg,
+            #9100ff,
+            #00f896);
+    /* backdrop-filter: blur(15px); */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.479);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:1300px) {
+ 
+    .store{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+@media screen and (max-width:880px) {
+ 
+    .store{
+        grid-template-columns: 1fr 1fr ;
+    }
+    
+}
+@media screen and (max-width:550px) {
+ 
+    body{
+        display: none;
+    }
+    
+}
+
+
+
+.s-content:hover {
+    transform: translateY(-10px);
+
+}
+
+.s-content img {
+    height: 18rem;
+    width: auto;
+    border-radius: 10px;
+    /* box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.479); */
+}
+
+.get {
+    display: flex;
+    justify-content: space-between;
+}
+
+.s-content button {
+    width: 48%;
+    height: 3rem;
+    font-size: 1.09rem;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+    /* background-color: #57a397; */
+    background-image: linear-gradient(347deg,
+            #00414e,
+            #407e74);
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+.s-content button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    /* box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.479); */
+
+}
+
+
+.get-content {
+    color: white;
+    margin: 5px 0px;
+    border-radius: 10px;
+    background-color: #0068585e;
+    backdrop-filter: blur(15px);
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+.media {
+    /* display: grid; */
+    display: none;
+    gap: 10px;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+}
+
+
+
+
+.media-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    opacity: 90%;
+    transition: 0.3s;
+    border: 3px solid transparent;
+
+}
+
+.media-item img:hover {
+    opacity: 100%;
+    transform: scale(0.9);
+    cursor: pointer;
+    border: 3px solid white;
+
+}
